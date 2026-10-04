@@ -65,3 +65,22 @@ app/
   main.py        HTTP API (FastAPI)
 scripts/make_samples.py  генерация локального набора файлов
 ```
+
+## Проект курса
+
+Описание проекта, текущее состояние, целевой процесс и план проверок — в [project.md](project.md). Результаты проверок сохраняются в [evidence/](evidence/), индивидуальные страницы участников — в [individual/](individual/).
+
+Baseline продукта — commit `dc5be8c`. Автоматических тестов в baseline нет; проверки появятся по плану раздела 5 `project.md`, и здесь будут приведены команды их запуска.
+
+### Фиксация комплекта ЭК1
+
+Тег `ek1` ставится на commit, который сдаётся, только после того, как оба участника согласовали разделы 1–5:
+
+```bash
+git status --short
+git tag ek1
+git push origin HEAD
+git push origin ek1
+git archive --format=zip --output=../ek1.zip ek1
+unzip -t ../ek1.zip
+```
