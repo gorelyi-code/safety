@@ -1,0 +1,8 @@
+.git
+.venv
+data
+samples
+evidence
+individual
+**/__pycache__
+*.md
