@@ -30,9 +30,10 @@ python3.12 -m venv .venv
 .venv/bin/python scripts/make_samples.py
 ```
 
-Контейнер (Dockerfile в baseline локально не собирался):
+Контейнер (проверено с Docker Engine 29.5.2 в Colima на macOS arm64):
 
 ```bash
+colima start            # только macOS с Colima; с Docker Desktop не нужно
 docker build -t imgdrop .
 docker run --rm -p 8000:8000 imgdrop
 ```
