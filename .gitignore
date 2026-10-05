@@ -7,3 +7,4 @@ __pycache__/
 # runtime storage and locally generated sample files
 data/
 samples/
+docker
